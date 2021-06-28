@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
@@ -10,21 +12,21 @@
       <title>Crowdfunding Agency</title>
     </head>
     <body>
-        <nav class="navbar active" id="nav">
-            <div class="logo">crowdfund</div>
-            <a href="#" class="toggle-button" id="toggle">
-              <span class="bar bar1"></span>
-              <span class="bar bar2"></span>
-              <span class="bar bar3"></span>
-            </a>
-            <div class="navbar-links active" id="navbar-links">
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Discover</a></li>
-                <li><a href="">Get Started</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="navbar active" id="nav">
+        <div class="logo">crowdfund</div>
+        <a href="#" class="toggle-button" id="toggle">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+        </a>
+        <div class="navbar-links active" id="navbar-links">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Get Started</a></li>
+          </ul>
+        </div>
+      </nav>
         
           
           <div id="main">
@@ -62,7 +64,7 @@
               <img src="images/icon-close-modal.svg" class="close-button" id="close">
               <div class="input-container">
                 <div class="radio-container">
-                  <input type="radio" id="a" name="radioEl" class="radioEl">
+                  <input type="radio"  name="radioEl" class="radioEl">
                   <div class="radio-info">
                     <h3>Pledge with no reward</h3>
                     <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
@@ -71,18 +73,18 @@
               </div>
               <div class="pledge-enter">
                 <div class="pledge-buttons">
-                  <div id="form">
+                  <div id="form-container">
                     <label for="amount">Enter your pledge $(min.1)</label>
-                    <input type="number" id="amount-a" name="amount" min="1" max="1000000" value="1">
+                    <input type="number"  name="amount" min="1" max="1000000" value="1">
                   </div>
-                  <input type='submit' class="btn" id="continue" value="Continue">
+                  <input type='submit' class="btn"  value="Continue">
                 </div>
               </div> 
               </div>
         
               <div class="input-container" id="test">
                 <div class="radio-container">
-                  <input type="radio" id="b" name="radioEl"class="radioEl">
+                  <input type="radio"  name="radioEl"class="radioEl">
                   <div class="radio-info">
                     <h3>Bamboo Stand <span class="pledge">Pledge 25$ or more</span></h3>
                     <span class="left"><span class='item-left'>101</span><p>left</p></span>
@@ -92,18 +94,18 @@
                 </div>
                 <div class="pledge-enter">
                   <div class="pledge-buttons">
-                    <div id="form">
+                    <div id="form-container">
                       <label for="amount">Enter your pledge $(min.25)</label>
-                      <input type="number" id="amount-b" name="amount" min="25" max="1000000" value="25">
+                      <input type="number"  name="amount" min="25" max="1000000" value="25">
                     </div>
-                    <input type='submit' class="btn" id="continue" value="Continue">
+                    <input type='submit' class="btn"  value="Continue">
                   </div>
                 </div> 
               </div>
         
               <div class="input-container">
                 <div class="radio-container">
-                  <input type="radio" id="c" name="radioEl" class="radioEl">
+                  <input type="radio"  name="radioEl" class="radioEl">
                   <div class="radio-info">
                     <h3>Black Edition Stand <span class="pledge">Pledge 75$ or more</span></h3>
                     <span class="left"><span class='item-left'>64</span><p>left</p></span>
@@ -114,18 +116,18 @@
                 </div>
                 <div class="pledge-enter">
                   <div class="pledge-buttons">
-                    <div id="form">
+                    <div id="form-container">
                       <label for="amount">Enter your pledge $(min.75)</label>
-                      <input type="number" id="amount-c" name="amount" min="75" max="1000000" value="75" required>
+                      <input type="number"  name="amount" min="75" max="1000000" value="75" required>
                     </div>
-                    <input type='submit' class="btn" id="continue" value="Continue">
+                    <input type='submit' class="btn"  value="Continue">
                   </div>
                 </div> 
               </div>
         
               <div class="input-container sold">
                 <div class="radio-container">
-                  <input type="radio" id="c" name="radioEl" class="radioEl" disabled>
+                  <input type="radio"  name="radioEl" class="radioEl" disabled>
                   <div class="radio-info">
                     <h3>Black Edition Stand <span class="pledge">Pledge 200$ or more</span></h3>
                     <span class="left"><span class='item-left'>0</span><p>left</p></span>
