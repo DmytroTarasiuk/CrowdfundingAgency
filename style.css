@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 214, 214);
+    font-family: 'Nunito', sans-serif;
+}
+p {
+    color: gray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    background-image: url('images/image-hero-desktop.jpg');
+    background-position: top top;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: -1;
+}
+
+.logo {
+    margin: 2.5rem 0 0 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 2rem 5rem 0 0;
+    padding: 0;
+    transition: 0.6s linear;
+}
+
+.navbar-links li {
+    list-style: none;   
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(56, 101, 116);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.2s linear;
+}
+
+.navbar.active .toggle-button .bar1 {
+    transform: rotate(-40deg) translateY(10px);
+}
+
+.navbar.active .toggle-button .bar3 {
+    transform: rotate(40deg) translateY(-10px);
+}
+
+.navbar.active .toggle-button .bar2 {
+    display: none;
+}
+
+/*main section */
+#main {
+    margin: 0 25%;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    top: -80px;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 100%;  
+    position: relative;
+    z-index: -1;
+}
+
+.nav-item {
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.nav-item.title .logo-mastercraft {
+    position: absolute;
+    top: -35px;
+    left: 45%;
+}
+
+
+.nav-item.totals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 3.5rem 0;
+}
+
+.numbers {
+    padding: 1rem 3rem;
+}
+.numbers.middle {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-items.totals, .scale {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 10%;
+    width: 80%;
+    height: 15px;
+    background: linear-gradient(to right, rgb(27, 184, 171) 0%, rgb(27, 184, 171) 80%, lightgray 80%, lightgray 100%);
+    border-radius: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(27, 184, 171);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+
+.bookmark {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bookmark img {
+    margin-right: 10px;
+}
+
+/* Selection modal state section */
+
+.back-container {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding: 1.5rem;
+    text-align: left;
+    display: none;
+}
+
+.close-button {
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+}
+#item-left{
+    margin-right: 0.25rem;
+}
+.pledge {
+    color: rgb(27, 184, 171);
+    margin-left: 1rem;
+}
+.input-container {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    position: relative;
+    padding: 1rem;
+}
+.input-container.checked {
+    border: 1px solid rgb(27, 184, 171);
+}
+.input-container.sold {
+    opacity: 0.5;
+}
+.radio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.radioEl {
+    margin-right: 1.5rem;
+}
+.radio-info {
+    margin-top: -1rem;
+}
+
+.pledge-enter {
+    display: none;
+}
+.pledge-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pledge-buttons input {
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+.pledge-buttons input:focus {
+    outline:0;
+}
+.pledge-buttons input:active {
+    background-color: lightgray;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url('images/image-hero-mobile.jpg');
+        height: 70vh;
+    }
+    .logo {
+        margin: 2rem 0 0 2rem;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem 0;
+        transition: 0.6s linear;
+        background-color: #fff;
+        opacity: 0.7;
+    }
+    .navbar-links.active ul {
+        width: 100%;
+        height: 40%;
+    }
+    .navbar-links ul li {
+        text-align: center;
+        
+    }
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+        color: black
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    #main {
+        margin: 0 5%;
+    }
+    .nav-item.totals {
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+    .hide {
+        display: none;
+    }
+    .bookmark {
+        background-color: #fff;
+    }
+    .numbers {
+        padding: 1rem 0;
+    }
+    .numbers.middle {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: none;
+        border-left: none;
+    }
+    .nav-items.totals, .scale {
+        bottom: 1.5rem;
+    }
+    .nav-buttons {
+        justify-content: center;
+    }
+    .radio-container {
+        flex-direction: column;
+    }
+    .radio-info {
+        margin: 0.5rem;
+    }
+    
+}
