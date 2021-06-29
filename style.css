@@ -219,8 +219,9 @@ p {
     right: 1.5rem;
     top: 0;
 }
-#item-left{
+.item-left{
     margin-right: 0.25rem;
+    font-weight: bold;
 }
 .pledge {
     color: rgb(27, 184, 171);

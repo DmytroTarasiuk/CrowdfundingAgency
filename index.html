@@ -12,14 +12,14 @@
       <title>Crowdfunding Agency</title>
     </head>
     <body>
-      <nav class="navbar active" id="nav">
+      <nav class="navbar" id="nav">
         <div class="logo">crowdfund</div>
         <a href="#" class="toggle-button" id="toggle">
           <span class="bar bar1"></span>
           <span class="bar bar2"></span>
           <span class="bar bar3"></span>
         </a>
-        <div class="navbar-links active" id="navbar-links">
+        <div class="navbar-links" id="navbar-links">
           <ul>
             <li><a href="">About</a></li>
             <li><a href="">Discover</a></li>
@@ -37,7 +37,7 @@
                 <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                 <div class="nav-buttons">
                   <button class="btn" id="back-project">Back this project</button>
-                  <button class="bookmark" id="bookmark"><img src="images/icon-bookmark.svg"><span class="hide">Bookmark</span></button>
+                  <button class="bookmark" id="bookmark"><img src="images/icon-bookmark.svg" alt="bookmark"><span class="hide">Bookmark</span></button>
                 </div>
               </div>
               <div class="nav-item totals">
@@ -61,10 +61,10 @@
             <div class="back-container" id="back-container">
               <h2>Back this projects</h2>
               <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-              <img src="images/icon-close-modal.svg" class="close-button" id="close">
+              <img src="images/icon-close-modal.svg" alt="close-modal" class="close-button" id="close">
               <div class="input-container">
                 <div class="radio-container">
-                  <input type="radio"  name="radioEl" class="radioEl">
+                  <input type="radio" class="radioEl" aria-labelledby="radioEl">
                   <div class="radio-info">
                     <h3>Pledge with no reward</h3>
                     <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
@@ -73,31 +73,31 @@
               </div>
               <div class="pledge-enter">
                 <div class="pledge-buttons">
-                  <div id="form-container">
-                    <label for="amount">Enter your pledge $(min.1)</label>
-                    <input type="number"  name="amount" min="1" max="1000000" value="1">
-                  </div>
+                  <form class="form-container">
+                    <label for="amount-a">Enter your pledge $(min.1)</label>
+                    <input type="number" id="amount-a" name="amount-a" min="1" max="1000000" value="1">
+                  </form>
                   <input type='submit' class="btn"  value="Continue">
                 </div>
               </div> 
               </div>
         
-              <div class="input-container" id="test">
+              <div class="input-container" id>
                 <div class="radio-container">
-                  <input type="radio"  name="radioEl"class="radioEl">
+                  <input type="radio" aria-labelledby="radioEl" class="radioEl">
                   <div class="radio-info">
                     <h3>Bamboo Stand <span class="pledge">Pledge 25$ or more</span></h3>
-                    <span class="left"><span class='item-left'>101</span><p>left</p></span>
+                    <span class="left"><span class='item-left'>101</span>left</span>
                     <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
                     you’ll be added to a special Backer member list.</p>
                   </div>
                 </div>
                 <div class="pledge-enter">
                   <div class="pledge-buttons">
-                    <div id="form-container">
-                      <label for="amount">Enter your pledge $(min.25)</label>
-                      <input type="number"  name="amount" min="25" max="1000000" value="25">
-                    </div>
+                    <form class="form-container">
+                      <label for="amount-b">Enter your pledge $(min.25)</label>
+                      <input type="number" id="amount-b" name="amount-b" min="25" max="1000000" value="25">
+                    </form>
                     <input type='submit' class="btn"  value="Continue">
                   </div>
                 </div> 
@@ -105,10 +105,10 @@
         
               <div class="input-container">
                 <div class="radio-container">
-                  <input type="radio"  name="radioEl" class="radioEl">
+                  <input type="radio" class="radioEl" aria-labelledby="radioEl">
                   <div class="radio-info">
                     <h3>Black Edition Stand <span class="pledge">Pledge 75$ or more</span></h3>
-                    <span class="left"><span class='item-left'>64</span><p>left</p></span>
+                    <span class="left"><span class='item-left'>64</span>left</span>
                     <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
                       member list. Shipping is included.
                     </p>
@@ -116,10 +116,10 @@
                 </div>
                 <div class="pledge-enter">
                   <div class="pledge-buttons">
-                    <div id="form-container">
-                      <label for="amount">Enter your pledge $(min.75)</label>
-                      <input type="number"  name="amount" min="75" max="1000000" value="75" required>
-                    </div>
+                    <form class="form-container">
+                      <label for="amount-c">Enter your pledge $(min.75)</label>
+                      <input type="number" id="amount-c" name="amount-c" min="75" max="1000000" value="75" required>
+                    </form>
                     <input type='submit' class="btn"  value="Continue">
                   </div>
                 </div> 
@@ -127,7 +127,7 @@
         
               <div class="input-container sold">
                 <div class="radio-container">
-                  <input type="radio"  name="radioEl" class="radioEl" disabled>
+                  <input type="radio" class="radioEl" aria-labelledby="radioEl" disabled>
                   <div class="radio-info">
                     <h3>Black Edition Stand <span class="pledge">Pledge 200$ or more</span></h3>
                     <span class="left"><span class='item-left'>0</span><p>left</p></span>
